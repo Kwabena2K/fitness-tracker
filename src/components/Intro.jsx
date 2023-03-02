@@ -9,10 +9,10 @@ import {
 function Intro() {
   return (
     <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 text-xl">
-      <h1 className="text-4xl">LOGMYFITNESS</h1>
+      <h1 className="text-4xl font-black">Log My Fitness</h1>
 
-      <p className="pt-20 pb-6 italic">
-        LogMyFitness is designed to replace your paper workout journal.
+      <p className="pt-5 pb-6 italic font-normal text-base">
+        LogMyFitness is designed to replace your paper workout journal
       </p>
       <p className="flex items-center justify-center flex-col text-center pt-20 pb-6 px-40">
         <p>

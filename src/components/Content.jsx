@@ -94,7 +94,7 @@ const Content = () => {
 
   return (
     <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 text-xl border-2px-4 rounded-md shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Create Your Workout</h2>
+      <h2 className="text-2xl font-bold mb-4">Log Your Workout</h2>
       <form onSubmit={handleSubmit} className="mb-6">
         {exercises.map((exercise, exerciseIndex) => (
           <div key={exerciseIndex} className="mb-4">
@@ -105,7 +105,7 @@ const Content = () => {
               <select
                 value={exercise.exercise}
                 onChange={(event) => handleExerciseChange(event, exerciseIndex)}
-                className="flex-1 mr-2"
+                className="flex-1 mr-2 bg-transparent"
               >
                 <option value="" disabled>
                   Select Exercise
@@ -123,12 +123,12 @@ const Content = () => {
               <button
                 type="button"
                 onClick={() => handleRemoveExercise(exerciseIndex)}
-                className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
+                className="bg-red-500 hover:bg-red-700 text-white font-bold p-2 rounded"
               >
                 Remove
               </button>
             </div>
-            <div className="flex">
+            <div className="flex pt-5">
               <label className="block font-bold mr-2">Sets</label>
               {exercise.sets.map((set, setIndex) => (
                 <input
@@ -144,12 +144,12 @@ const Content = () => {
               <button
                 type="button"
                 onClick={() => handleAddSet(exerciseIndex)}
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded"
+                className="bg-green-500 hover:bg-green-700 text-white font-bold p-2 rounded"
               >
                 Add Set
               </button>
             </div>
-            <div className="flex">
+            <div className="flex pt-5">
               <label className="block font-bold mr-2">Reps</label>
               {exercise.reps.map((rep, setIndex) => (
                 <input
@@ -165,7 +165,7 @@ const Content = () => {
               <button
                 type="button"
                 onClick={() => handleAddRep(exerciseIndex)}
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded"
+                className="bg-green-500 hover:bg-green-700 text-white font-bold p-2 rounded"
               >
                 Add Rep
               </button>
