@@ -93,7 +93,7 @@ const Content = () => {
   };
 
   return (
-    <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 text-xl text-white bg-black border-2px-4  shadow-md">
+    <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 text-xl text-white bg-knight-900 border-2px-4 font-body  shadow-md">
       <h2 className="text-2xl font-bold mb-4">Log Your Workout</h2>
       <form onSubmit={handleSubmit} className="mb-6">
         {exercises.map((exercise, exerciseIndex) => (
@@ -105,7 +105,7 @@ const Content = () => {
               <select
                 value={exercise.exercise}
                 onChange={(event) => handleExerciseChange(event, exerciseIndex)}
-                className="flex-1 mr-2 bg-transparent"
+                className="flex-1 mr-2 bg-white text-black rounded"
               >
                 <option value="" disabled>
                   Select Exercise
@@ -123,7 +123,7 @@ const Content = () => {
               <button
                 type="button"
                 onClick={() => handleRemoveExercise(exerciseIndex)}
-                className="bg-red-500 hover:bg-red-700 text-white font-bold p-2 rounded"
+                className="bg-slate-600 hover:bg-slate-900 text-white font-bold p-2 rounded"
               >
                 Remove
               </button>
@@ -138,7 +138,7 @@ const Content = () => {
                   onChange={(event) =>
                     handleSetChange(event, exerciseIndex, setIndex)
                   }
-                  className="mr-2"
+                  className="mr-2 text-black rounded"
                 />
               ))}
               <button
@@ -150,7 +150,7 @@ const Content = () => {
               </button>
             </div>
             <div className="flex pt-5">
-              <label className="block font-bold mr-2">Reps</label>
+              <label className="block font-bold mr-2 ">Reps</label>
               {exercise.reps.map((rep, setIndex) => (
                 <input
                   key={setIndex}
@@ -159,7 +159,7 @@ const Content = () => {
                   onChange={(event) =>
                     handleRepChange(event, exerciseIndex, setIndex)
                   }
-                  className="mr-2"
+                  className="mr-2 text-black rounded"
                 />
               ))}
               <button
@@ -175,7 +175,7 @@ const Content = () => {
         <button
           type="button"
           onClick={handleAddExercise}
-          className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
+          className="bg-slate-600 hover:bg-slate-900 text-white font-bold py-1 px-2 rounded"
         >
           Add Exercise
         </button>
@@ -186,7 +186,7 @@ const Content = () => {
           Submit
         </button>
       </form>
-      <div className="border border-gray-400 p-4">
+      <div className="border-4 border-white p-10 rounded-md ">
         <h3 className="font-bold mb-2">Completed Workout:</h3>
         <pre className="whitespace-pre-wrap">{completedWorkout}</pre>
       </div>
