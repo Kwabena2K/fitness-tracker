@@ -9,20 +9,52 @@ import {
 function Intro() {
   return (
     <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 text-xl">
-      <h1 className="text-4xl font-black">Log My Fitness</h1>
+      <h1 className="text-4xl font-black font-Rubik">Log My Fitness</h1>
 
-      <p className="pt-5 pb-6 italic font-normal text-base">
+      <p className="pt-5 pb-6 italic">
         LogMyFitness is designed to replace your paper workout journal
       </p>
+
+      {/* Background UI behind the image */}
+      <div class="bg-gray-50 min-h-screen flex items-center justify-center px-8">
+        <div class="relative w-full max-w-lg">
+          {/* 1st Circle (hidden) */}
+          {/* !mix-blend-multiply to combine the circles */}
+          <div class="absolute -bottom-0 -left-4 w-72 h-72 bg-violet-500 rounded-full mix-blend-multiply filter blur-xl opacity-100 animate-blob"></div>
+          {/* 2nd Circle */}
+          <div class="absolute top-0 -right-4 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-100 animate-blob animation-delay-10"></div>
+          {/* 3rd Circle */}
+          <div class="absolute top-0 left-10 w-72 h-72 bg-midnight-950 rounded-full mix-blend-multiply filter blur-xl opacity-100 animate-blob animation-delay-10"></div>
+          <div class="m-8 relative space-y-4">
+            <div class="p-5 flex items-center justify-between space-x-8">
+              {/* How close the circles will be beside each other */}
+              <div>
+                <div class="w-24 h-6"></div>
+              </div>
+            </div>
+            <div class="p-5 flex items-center justify-between space-x-8"></div>
+          </div>
+        </div>
+        {/* Background hero image */}
+        <div className="object-scale-down absolute">
+          <img src="/assets/fitness-app.webp" alt="" />
+        </div>
+        {/* END */}
+      </div>
+      {/* END */}
+
+      {/* Information prompts */}
       <p className="flex items-center justify-center flex-col text-center pt-20 pb-6 px-40">
-        <p>
-          <FontAwesomeIcon icon={faCircleInfo} size="2x" color="dodgerblue" />
+        <p className="pt-5">
+          <p>
+            <FontAwesomeIcon icon={faCircleInfo} size="2x" color="dodgerblue" />
+          </p>
+          Welcome to LogMyFitness! As soon as you arrive, you'll notice that
+          we've kept things simple and minimalist, so that you can focus on what
+          matters most: your fitness goals. One of the key features of our app
+          is the ability to create your own workout logs, which you can then
+          share with others via a list.
         </p>
-        Welcome to LogMyFitness! As soon as you arrive, you'll notice that we've
-        kept things simple and minimalist, so that you can focus on what matters
-        most: your fitness goals. One of the key features of our app is the
-        ability to create your own workout logs, which you can then share with
-        others via a list.
         <p className="pt-20">
           <p>
             <FontAwesomeIcon icon={faThumbsUp} size="2x" color="dodgerblue" />
@@ -45,5 +77,8 @@ function Intro() {
       </p>
     </div>
   );
+  {
+    /* END */
+  }
 }
 export default Intro;

@@ -4,6 +4,11 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        midnight: {
+          950: "#ae4689",
+        },
+      },
       fontFamily: {
         inter: ["inter", "serif"],
       },

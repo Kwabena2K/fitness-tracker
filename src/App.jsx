@@ -5,7 +5,7 @@ import Content from "./components/Content";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gray-50 min-h-screen">
       <Intro />
       <Content />
       <Footer />
