@@ -8,7 +8,7 @@ import {
 
 function Intro() {
   return (
-    <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 text-xl">
+    <div className="flex items-center justify-center flex-col text-center text-black pt-20 text-xl">
       <h1 className="text-4xl font-black font-Rubik">Log My Fitness</h1>
 
       <p className="pt-5 pb-6 italic">
@@ -16,7 +16,7 @@ function Intro() {
       </p>
 
       {/* Background UI behind the image */}
-      <div class="bg-gray-50 min-h-screen flex items-center justify-center px-8">
+      <div class=" min-h-screen flex items-center justify-center px-8">
         <div class="relative w-full max-w-lg">
           {/* 1st Circle (hidden) */}
           {/* !mix-blend-multiply to combine the circles */}
@@ -42,9 +42,18 @@ function Intro() {
         {/* END */}
       </div>
       {/* END */}
+      <div className="relative bottom-0 left-0 w-full overflow-hidden line-height rotate-180">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          className="relative w-full h-99"
+        >
+          <path d="M1200 0L0 0 598.97 114.72 1200 0z" fill="black"></path>
+        </svg>
+      </div>
 
       {/* Information prompts */}
-      <p className="flex items-center justify-center flex-col text-center pt-20 pb-6 px-40">
+      <p className="flex items-center justify-center flex-col text-center text-white pt-20 pb-6 px-40 bg-black">
         <p className="pt-5">
           <p>
             <FontAwesomeIcon icon={faCircleInfo} size="2x" color="dodgerblue" />

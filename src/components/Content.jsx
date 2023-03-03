@@ -93,7 +93,7 @@ const Content = () => {
   };
 
   return (
-    <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 text-xl border-2px-4 rounded-md shadow-md">
+    <div className="flex items-center justify-center flex-col text-center pt-20 pb-6 text-xl text-white bg-black border-2px-4  shadow-md">
       <h2 className="text-2xl font-bold mb-4">Log Your Workout</h2>
       <form onSubmit={handleSubmit} className="mb-6">
         {exercises.map((exercise, exerciseIndex) => (
@@ -186,7 +186,7 @@ const Content = () => {
           Submit
         </button>
       </form>
-      <div className="border border-gray-400 rounded-md p-4">
+      <div className="border border-gray-400 p-4">
         <h3 className="font-bold mb-2">Completed Workout:</h3>
         <pre className="whitespace-pre-wrap">{completedWorkout}</pre>
       </div>
