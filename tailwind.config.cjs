@@ -16,6 +16,9 @@ module.exports = {
         knight: {
           900: "#ed7332",
         },
+        lightorange: {
+          200: "#e67e47",
+        },
         beige: {
           200: "#f6ede3",
         },
