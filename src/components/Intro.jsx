@@ -9,36 +9,40 @@ import {
 function Intro() {
   return (
     <div className="flex items-center justify-center flex-col text-center text-black pt-20 text-xl font-body">
-      <h1 className="font-bold text-3xl font-montserrat uppercase">
-        log my fitness
-      </h1>
+      <div className="border-transparent border-b-4 hover:border-knight-900 cursor-pointer">
+        <a href="/">
+          <h1 className="font-bold text-4xl font-montserrat uppercase md:text-5xl">
+            log my fitness
+          </h1>
+        </a>
+      </div>
 
       <p className="pt-5 pb-6 italic">
         LogMyFitness is designed to replace your paper workout journal
       </p>
 
       {/* Background UI behind the image */}
-      <div class=" min-h-screen flex items-center justify-center px-8">
-        <div class="relative w-full max-w-lg">
+      <div className=" min-h-screen flex items-center justify-center px-8">
+        <div className="relative w-full max-w-lg">
           {/* 1st Circle (hidden) */}
           {/* !mix-blend-multiply to combine the circles */}
-          <div class="absolute bottom-4 left-2 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-100 animate-blob"></div>
+          <div className="absolute bottom-4 left-2 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-100 animate-blob"></div>
           {/* 2nd Circle */}
-          <div class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-100 animate-blob animation-delay-10"></div>
+          <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-100 animate-blob animation-delay-10"></div>
           {/* 3rd Circle */}
-          <div class="absolute top-0 left-10 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-100 animate-blob animation-delay-10"></div>
-          <div class="m-8 relative space-y-4">
-            <div class="p-5 flex items-center justify-between space-x-8">
+          <div className="absolute top-0 left-10 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-100 animate-blob animation-delay-10"></div>
+          <div className="m-8 relative space-y-4">
+            <div className="p-5 flex items-center justify-between space-x-8">
               {/* How close the circles will be beside each other */}
               <div>
-                <div class="w-24 h-6"></div>
+                <div className="w-24 h-6"></div>
               </div>
             </div>
-            <div class="p-5 flex items-center justify-between space-x-8"></div>
+            <div className="p-5 flex items-center justify-between space-x-8"></div>
           </div>
         </div>
         {/* Background hero image */}
-        <div className="object-scale-down absolute">
+        <div className="object-scale-down absolute  w-full md:w-4/5 lg:w-4/5 sm:w-48">
           <img src="/assets/fitness-app.webp" alt="" />
         </div>
         {/* END */}
