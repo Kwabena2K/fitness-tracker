@@ -6,10 +6,6 @@ import {
   faThumbsUp,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
-<<<<<<< HEAD
-=======
-import { faUser } from "@fortawesome/free-regular-svg-icons";
->>>>>>> 8025f40effc8070d8d957635c12561e9d15cfa3d
 
 function Intro() {
   return (
@@ -48,11 +44,7 @@ function Intro() {
         </div>
         {/* Background hero image */}
         <div className="object-scale-down absolute  w-full md:w-4/5 lg:w-4/5 sm:w-48">
-<<<<<<< HEAD
           <img src="assets\fitness-app.webp" alt="" />
-=======
-          <img src="/assets/fitness-app.webp" alt="" />
->>>>>>> 8025f40effc8070d8d957635c12561e9d15cfa3d
         </div>
         {/* END */}
       </div>

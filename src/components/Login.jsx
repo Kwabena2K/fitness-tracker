@@ -1,17 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-<<<<<<< HEAD
 import GoogleButton from "react-google-button";
 import axios from "axios";
 
 const Login = ({ clientId }) => {
-=======
-import GoogleLogin from "react-google-login";
-import axios from "axios";
-
-const Login = () => {
->>>>>>> 8025f40effc8070d8d957635c12561e9d15cfa3d
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
@@ -28,11 +21,7 @@ const Login = () => {
   };
 
   return (
-<<<<<<< HEAD
     <div className=" flex flex-col font-montserrat justify-center py-12 sm:px-6 lg:px-8 justify-end sm:justify-center">
-=======
-    <div className=" flex font-montserrat flex-col justify-center py-12 sm:px-6 lg:px-8 justify-end sm:justify-center">
->>>>>>> 8025f40effc8070d8d957635c12561e9d15cfa3d
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Log in to your account
@@ -51,7 +40,6 @@ const Login = () => {
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="py-8 px-4 shadow sm:rounded-lg sm:px-10">
           <div className="space-y-6">
-<<<<<<< HEAD
             <div className="w-full h-12">
               <GoogleButton
                 clientId="396584149825-f8umnkdt0hv9a40i5ss7vpmk8d5j932v.apps.googleusercontent.com"
@@ -62,16 +50,6 @@ const Login = () => {
                 className="w-full h-12 flex items-center justify-center rounded-md border border-gray-300 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               />
             </div>
-=======
-            <GoogleLogin
-              clientId="396584149825-f8umnkdt0hv9a40i5ss7vpmk8d5j932v.apps.googleusercontent.com"
-              buttonText="Log in with Google"
-              onSuccess={handleGoogleLogin}
-              onFailure={(err) => console.log(err)}
-              cookiePolicy={"single_host_origin"}
-              className="w-full h-12 flex items-center justify-center rounded-md border border-gray-300 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            />
->>>>>>> 8025f40effc8070d8d957635c12561e9d15cfa3d
             {error && <div className="text-red-500">{error}</div>}
           </div>
         </div>
