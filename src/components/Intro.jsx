@@ -4,7 +4,9 @@ import {
   faCircleInfo,
   faHeart,
   faThumbsUp,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-regular-svg-icons";
 
 function Intro() {
   return (
@@ -63,41 +65,49 @@ function Intro() {
       </div>
 
       {/* Information prompts */}
-      <p className="flex items-center justify-center flex-col text-center text-white pt-20 pb-6 px-40 bg-knight-900 font-body">
-        <p className="pt-5">
-          <p>
-            <FontAwesomeIcon icon={faCircleInfo} size="2x" color="" />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-center text-white  px-6 py-12 md: py-20 bg-knight-900 font-body">
+        <div className="flex flex-col justify-center">
+          <FontAwesomeIcon icon={faCircleInfo} size="2x" color="" />
+          <p className="mb-6">
+            Welcome to LogMyFitness! As soon as you arrive, you'll notice that
+            we've kept things simple and minimalist, so that you can focus on
+            what matters most: your fitness goals. One of the key features of
+            our app is the ability to create your own workout logs, which you
+            can then share with others via a list.
           </p>
-          Welcome to LogMyFitness! As soon as you arrive, you'll notice that
-          we've kept things simple and minimalist, so that you can focus on what
-          matters most: your fitness goals. One of the key features of our app
-          is the ability to create your own workout logs, which you can then
-          share with others via a list.
-        </p>
-        <p className="pt-20">
-          <p>
-            <FontAwesomeIcon icon={faThumbsUp} size="2x" color="" />
+        </div>
+        <div className="flex flex-col justify-center">
+          <FontAwesomeIcon icon={faThumbsUp} size="2x" color="" />
+          <p className="mb-6">
+            Whether you want to keep your logs private, or share them publicly
+            to inspire others, our app makes it easy to stay accountable and
+            motivated. Adding exercises to your workout log is also a breeze.
+            You can easily search for and select the exercises that are right
+            for you, without any fuss or hassle.
           </p>
-          Whether you want to keep your logs private, or share them publicly to
-          inspire others, our app makes it easy to stay accountable and
-          motivated. Adding exercises to your workout log is also a breeze. You
-          can easily search for and select the exercises that are right for you,
-          without any fuss or hassle.
-        </p>
-        <p className="pt-20">
-          <p>
-            <FontAwesomeIcon icon={faHeart} size="2x" color="" />
+        </div>
+        <div className="flex flex-col justify-center">
+          <FontAwesomeIcon icon={faHeart} size="2x" color="" />
+          <p className="mb-6">
+            If you're looking for a fitness tracker app that is both effective
+            and user-friendly, look no further than our app. With its minimalist
+            design and powerful features, it's the perfect tool for anyone who
+            wants to take their fitness to the next level.
           </p>
-          If you're looking for a fitness tracker app that is both effective and
-          user-friendly, look no further than our app. With its minimalist
-          design and powerful features, it's the perfect tool for anyone who
-          wants to take their fitness to the next level.
-        </p>
-      </p>
+        </div>
+        <div className="flex flex-col justify-center">
+          <FontAwesomeIcon icon={faUsers} size="2x" color="" />
+          <p className="mb-6">
+            {" "}
+            Thinking of joining? Sign up today and register to join our
+            community of like-minded individuals! Registration is quick, easy
+            and completely free. By creating an account, you'll be able to
+            interact with other members, share your thoughts and opinions, and
+            even participate in discussions and events.
+          </p>
+        </div>
+      </div>
     </div>
   );
-  {
-    /* END */
-  }
 }
 export default Intro;
